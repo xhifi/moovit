@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <form className="">
+    <form className="w-full">
       <h2 className="text-4xl text-center font-bold mb-12">Login</h2>
       <div className="mb-3">
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -36,7 +36,7 @@ const page = () => {
         </button>
         <Link
           href="/register"
-          className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-2 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
+          className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-2 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 text-center"
         >
           Not a Member? Register
         </Link>
