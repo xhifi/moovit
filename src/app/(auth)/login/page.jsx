@@ -1,18 +1,19 @@
 import Link from "next/link";
+import login from "./actions/login";
 
 const page = () => {
   return (
-    <form className="w-full">
+    <form className="w-full" action={login}>
       <h2 className="text-4xl text-center font-bold mb-12">Login</h2>
       <div className="mb-3">
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Email
+        <label htmlFor="username" className="block text-sm font-medium text-gray-700">
+          Username
         </label>
         <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="someone@example.com"
+          id="username"
+          type="text"
+          name="username"
+          placeholder="john.doe"
           className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-slate-900 shadow-sm"
         />
       </div>

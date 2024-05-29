@@ -1,17 +1,18 @@
 import Link from "next/link";
+import register from "./actions/register";
 
 const page = () => {
   return (
-    <form className="w-full">
+    <form className="w-full" action={register}>
       <h2 className="text-4xl text-center font-bold mb-12">Register Here</h2>
       <div className="mb-3">
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-          Full Name
+        <label htmlFor="username" className="block text-sm font-medium text-gray-700">
+          Username
         </label>
         <input
-          id="name"
+          id="username"
           type="text"
-          name="name"
+          name="username"
           placeholder="John Doe"
           className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-slate-900 shadow-sm"
         />

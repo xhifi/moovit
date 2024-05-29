@@ -1,6 +1,5 @@
-"use client";
-
 const submitQuotation = async (formData) => {
+  "use server";
   const data = {
     name: formData.get("name"),
     email: formData.get("email"),
