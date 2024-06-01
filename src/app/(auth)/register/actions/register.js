@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 const register = async (formData) => {
   "use server";
 
@@ -14,7 +16,8 @@ const register = async (formData) => {
     body: JSON.stringify(data),
   });
   const res = await req.json();
-
-  console.log(res);
+  if (req.ok) {
+    redirect("/login");
+  }
 };
 export default register;

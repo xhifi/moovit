@@ -34,7 +34,7 @@ const Navigation = () => {
         <Link href="/" className="text-2xl font-bold select-none">
           Freight <span className="text-cyan-600 font-extrabold">Ninjas</span>
         </Link>
-        <div className="ms-auto md:flex md:flex-row md:items-center space-x-4 divide-x-4">
+        <div className="ms-auto md:flex md:flex-row md:items-center space-x-4">
           <NavigationList data={navigationListData} />
           <ul className="flex items-center space-x-2 ">
             <Link
@@ -42,12 +42,6 @@ const Navigation = () => {
               className="ms-5 px-3 py-1 border-2 border-cyan-600 rounded-md hover:bg-cyan-600 hover:text-white transition-colors"
             >
               Login / Register
-            </Link>
-            <Link
-              href="/"
-              className="px-3 py-1 bg-cyan-600 border-2 border-transparent rounded-md text-white hover:bg-cyan-600 transition-colors"
-            >
-              Get Quotation
             </Link>
           </ul>
         </div>
